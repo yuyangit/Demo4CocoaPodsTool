@@ -28,7 +28,7 @@ if __FILE__ == $0
                 end
                 if plist["TYEnvironment"] != check_value
                     if plist["TYEnvironment"] == nil
-                        puts "TYEnvironment 不存在"
+                        puts "TYEnvironment 不存在！！！"
                         else
                         abort "TYEnvironment匹配错误"
                     end
