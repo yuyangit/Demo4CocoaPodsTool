@@ -24,8 +24,8 @@ if __FILE__ == $0
                 if File.exist?(info_plist_path)
                     plist = Plist::parse_xml(info_plist_path)
                     if plist["TYEnvironment"] && check_value
-                        puts "TYEnvironment: {plist['TYEnvironment']}"
-                        puts "输入的匹配值: {check_value}"
+                        puts plist['TYEnvironment'] 
+                        puts check_value
                     end
                     if plist["TYEnvironment"] != check_value
                         if plist["TYEnvironment"] == nil
